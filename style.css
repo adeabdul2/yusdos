@@ -1,1 +1,196 @@
+/* GLOBAL */
 
+body{
+    background: #ffffff;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    line-height: 30px;
+    margin: 0;
+}
+
+section{
+    margin: 0;
+}
+
+/* HEADER */
+header .container{
+    display: flex;
+    width: 80%;
+    margin: auto;
+    height: 100px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header{
+    color: #ffffff;
+    height: 100%;
+    background: #000000;
+    border-bottom: 5px solid #cd2626;
+}
+
+.highlight {
+    color: #cd2626;
+}
+
+.container nav ul{
+    display: flex;
+    align-items: center;
+    height: 95%;
+    margin: 0;
+}
+
+.current a{
+    color: #cd2626;
+}
+
+nav ul li{
+    list-style: none;
+    padding: 0 20px;
+    font-weight: bold;
+}
+
+header ul a{
+    text-decoration: none;
+    color: #ffffff;
+    text-transform: uppercase;
+}
+
+/* SHOWCASE */
+
+#showcase{
+    height: 50vh;
+    background-image: url("https://source.unsplash.com/collection/5fNmWej4tAA");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#showcase .container{
+    width: 80%;
+    height: 100%;
+    color: #ffffff;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+#showcase h1{
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+#showcase p{
+    font-size: 1.2em;
+    align-content: center;
+}
+
+/* NEWSLETTER */
+
+#newsletter{
+    background: #000000;
+    height: 12vh;
+    display: flex;
+}
+
+#newsletter .container{
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    color: #ffffff;
+    width: 80%;
+}
+
+.container input[type="email"]{
+    padding: 8px;
+    width: 250px;
+}
+
+.container button[type="submit"]{
+    color: #ffffff;
+    border: none;
+    padding: 9px 20px;
+    background: orangered;
+}
+
+/* BOXES */
+
+#boxes .container{
+    display: flex;
+    width: 80%;
+    margin: auto;
+    padding: 20px;
+    text-align: center;
+}
+
+img{
+    width: 100px;
+}
+
+.box p{
+    font-size: 15px;
+    line-height: 20px;
+}
+
+.box .fa-brands{
+  font-size: 75px;
+}
+
+/* FOOTER */
+
+footer{
+    background: orangered;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 90px;
+    color: #ffffff;
+}
+
+/* MEDIA QUERIES */
+
+@media(max-width: 700px){
+    header .container{
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 20px;
+    }
+
+    #showcase{
+        height: 80vh;
+    }
+
+    #showcase h1{
+        line-height: 75px;
+    }
+
+    #newsletter{
+        height: 25vh;
+        width: 100%;
+        margin: auto;
+     
+    }
+
+    #newsletter .container{
+       flex-direction: column;
+       text-align: center;
+    }
+
+    .container input[type="email"]{
+        width: 70vw;
+        margin-bottom: 5px;
+    }
+
+    .container button[type="submit"]{
+        width: 73vw;
+        margin-bottom: 10px;
+    }
+
+    #boxes .container{
+        flex-direction: column;
+        padding: 20px;
+    }
+}
